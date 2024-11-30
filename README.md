@@ -1,6 +1,7 @@
 # How I Install Arch Linux
 
 A step-by-step guide to installing Arch Linux.
+P.S. **You will need a free bootable flash drive for 2GB+ space.**
 
 ---
 
