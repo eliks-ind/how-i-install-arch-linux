@@ -1,7 +1,8 @@
 # How I Install Arch Linux
 
 A step-by-step guide to installing Arch Linux.
-P.S. **You will need a free bootable flash drive for 2GB+ space.**
+
+**P.S.** _You will need a bootable flash drive with at least 2GB of free space._
 
 ---
 
@@ -27,30 +28,58 @@ P.S. **You will need a free bootable flash drive for 2GB+ space.**
 
 - Insert the bootable USB into the computer where you want to install Arch Linux.
 - Access the boot menu (commonly accessed via `F2`, `F12`, or `Esc` during startup) and select the USB device.
-- You'll see a menu similar to this:  
-  ![Arch Linux Boot Menu](./resources/arch_menu.jpg)
-- Choose the first option and wait for the loading process:  
-  ![Arch Linux Loading Screen](./resources/arch_load.jpg)
-- After loading, you’ll reach the ready-to-install prompt:  
-  ![Arch Linux Ready Prompt](./resources/arch_ready.jpg)
-
----
+- From the menu, select the first option and wait for the loading process to complete.
+- After loading, you’ll see the Arch Linux installation prompt.
 
 ### 2. Check Internet Connectivity
 
-- **If using Ethernet:** You can skip this step since Ethernet usually works out of the box.
+- **If using Ethernet:** Ethernet usually works out of the box, so you can skip this step.
 - **If using Wi-Fi:**
-  - Test your connection by typing:
-    ```bash
-    ping google.com
-    ```
-  - If no connection, launch the interactive Wi-Fi setup tool:
-    ```bash
-    iwctl
-    ```
+
+  1. Test your connection by typing:
+
+     ```bash
+     ping google.com
+     ```
+
+     Press `Ctrl+C` to stop the test.
+
+  2. If there’s no connection, set up Wi-Fi using the `iwd` tool:
+
+     ```bash
+     iwd
+     device list
+     station wlan0 get-networks
+     station wlan0 connect [name_of_your_network]
+     ```
+
+     - Enter the Wi-Fi password when prompted.
+     - Exit the `iwd` tool by typing:
+
+       ```bash
+       exit
+       ```
+
+  3. Verify the connection again:
+
+     ```bash
+     ping google.com
+     ```
+
+### 3. Start the Installation
+
+1. Run the installation script:
+
+   ```bash
+   archinstall
+   ```
+
+2. Follow the prompts in the `archinstall` menu to configure and install Arch Linux:
+   - Select your preferred language (English is recommended for simplicity).
+   - Configure other options, such as disk partitioning, user accounts, and desktop environments.
 
 ---
 
-### Notes
+## Notes
 
 - For detailed troubleshooting and advanced configuration, refer to the [Arch Wiki](https://wiki.archlinux.org/).
