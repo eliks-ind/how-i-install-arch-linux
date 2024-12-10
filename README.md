@@ -28,8 +28,12 @@ A step-by-step guide to installing Arch Linux.
 
 - Insert the bootable USB into the computer where you want to install Arch Linux.
 - Access the boot menu (commonly accessed via `F2`, `F12`, or `Esc` during startup) and select the USB device.
-- From the menu, select the first option and wait for the loading process to complete.
-- After loading, you’ll see the Arch Linux installation prompt.
+- You'll see a menu similar to this:  
+  ![Arch Linux Boot Menu](./resources/arch_menu.jpg)
+- Choose the first option and wait for the loading process:  
+  ![Arch Linux Loading Screen](./resources/arch_load.jpg)
+- After loading, you’ll see the Arch Linux installation prompt:  
+  ![Arch Linux Ready Prompt](./resources/arch_ready.jpg)
 
 ### 2. Check Internet Connectivity
 
@@ -74,7 +78,9 @@ A step-by-step guide to installing Arch Linux.
    archinstall
    ```
 
-2. Follow the prompts in the `archinstall` menu to configure and install Arch Linux:
+2. After running the command, you'll see a menu like this:  
+   ![Archinstall Script Menu](./resources/archinstall_script_menu.png)
+
    - Select your preferred language (English is recommended for simplicity).
    - Configure other options, such as disk partitioning, user accounts, and desktop environments.
 
