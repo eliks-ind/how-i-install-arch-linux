@@ -124,7 +124,7 @@ A step-by-step guide to installing Arch Linux.
   ![Minimal Profile](./resources/arch_selected_profile_type_minimal.png)
 - **Audio Server:** Choose Pipewire (recommended for its modern features).  
   ![Audio Server](./resources/arch_audio_server.png)
-- **Additional Packages:** Add packages like `nvim vim firefox git python3 gcc`. These can also be installed post-installation.  
+- **Additional Packages:** Add packages like `neovim vim firefox git neofetch`. These can also be installed post-installation.  
   ![Additional Packages](./resources/arch_additional_packages.png)
 
 #### Timezone and Networking
@@ -145,9 +145,15 @@ A step-by-step guide to installing Arch Linux.
 
 ---
 
+After it completes reboot the system by typing `reboot now` or `reboot 0` and boot to the existing OS. You can also remove the flash drive.
+
 ### 4. Install a Desktop Environment
 
-Once Arch Linux is installed, you can set up a Desktop Environment (DE). Refer to the [Arch Wiki](https://wiki.archlinux.org/) for detailed steps on installing your preferred DE.
+-- Install yay
+
+type to your terminal `git clone https://aur.archlinux.org/yay.git`
+
+<!-- Once Arch Linux is installed, you can set up a Desktop Environment (DE). Refer to the [Arch Wiki](https://wiki.archlinux.org/) for detailed steps on installing your preferred DE. -->
 
 ---
 
